@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">FitGrind</string>
+    <string name="author">Allan Lin &amp; Johnny Nguyen</string>
+
+    <!-- Nav menu title -->
+    <string name="home">Home</string>
+    <string name="calorie_log">View Calorie Diary</string>
+    <string name="add_button">Add Food Diary</string>
+    <string name="add_food">Add Food</string>
+    <string name="add_custom_food">Add Custom Food</string>
+    <string name="weight_log">View Weight Log</string>
+    <string name="workout_schedule">View Workout Schedule</string>
+    <string name="add_title">Adding Foods</string>
+    <string name="helpful_links">Helpful Links</string>
+    <string name="workout_tips">Workout Tips</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="searchHint">Enter in food or drink</string>
+
+    <!-- Item Names -->
+    <string name="food_name_label">Food Name:</string>
+    <string name="food_serving_label">Serving Size:</string>
+
+    <!-- Invalid/Valid Information -->
+    <string name="invalid_search">Could not search! Invalid Search.</string>
+    <string name="item_not_exist">Food or Drink you entered does not exist.</string>
+    <string name="invalid_nutrients">Could not retrieve nutrients.</string>
+    <string name="invalid_info">Something went wrong with gathering food data! Please try again.</string>
+    <string name="db_error">Something went wrong with storing data!</string>
+    <string name="db_insert_success">Successfully inserted!</string>
+    <string name="db_update_success">Successfully updated!</string>
+    <string name="db_delete_success">Successfully deleted!</string>
+    <string name="db_empty">Empty progress! You cannot view this unless you\'ve inserted a photo!</string>
+    <string name="invalid_field">Some fields have not been entered! Please enter all the information.</string>
+    <string name="invalid_days">You must wait %d more day(s), until you can record another weight.</string>
+
+    <!-- Info -->
+    <string name="results_title">Calorie Results</string>
+    <string name="calorie_goal">Calorie Goal</string>
+    <string name="weight_goal">Weight Goal</string>
+    <string name="not_logged">No Logged Entry</string>
+
+    <!-- Strings related to Settings -->
+    <string name="title_activity_settings">Settings</string>
+    <string name="gender_title_label">Gender</string>
+    <string name="gender_summary">Enter your gender (Male or Female)</string>
+    <string name="weight_key">weight</string>
+    <string name="weight_label_title">Current Weight (lbs)</string>
+    <string name="weight_description">Enter in your current weight in lbs</string>
+    <string name="height_key_in">height_inches</string>
+    <string name="height_title_in">Enter your height (in)</string>
+    <string name="height_summary_in">Enter in your height (Example: 53 in)</string>
+    <string name="age_key">age</string>
+    <string name="age_title">Enter in your age</string>
+    <string name="age_summary">Enter in your current age. (Example: 15)</string>
+    <string name="weight_goal_key">weight_goal</string>
+    <string name="weight_goal_title">Enter your desired weight goal</string>
+    <string name="weight_goal_summary">Enter in the desired weight you wish to be</string>
+    <string name="lifestyle_title">Enter your active lifestyle</string>
+    <string name="lifestyle_summary">Your activity lifestyle.</string>
+    <string name="gender_default_value">Male</string>
+    <string name="calories_obtained">Calories Left</string>
+
+    <string name="custom_food_name_label">Food Name</string>
+    <string name="food_hint_name">Food or Beverage Name</string>
+    <string name="custom_serving_label">Serving Size:</string>
+    <string name="servingsize_hint">Serving Size</string>
+    <string name="calories_hint">Calorie Intake</string>
+    <string name="custom_calories">Calories (kcal):</string>
+    <string name="custom_sugar">Sugar (g):</string>
+    <string name="sugar_hint">Sugar (g)</string>
+    <string name="custom_totalfat">Total Fat (g):</string>
+    <string name="totalfat_hint">Total Fat (g)</string>
+    <string name="weight_week_label">Weight Per Week</string>
+    <string name="weight_week_summary">Select how much weight you want to lose or gain per week.</string>
+    <string name="carbohydrate_label">Carbohydrate (g)</string>
+    <string name="carbohydrate_hint">Carbohydrate</string>
+    <string name="saturatedfat_label">Saturated Fat (g):</string>
+    <string name="saturatedfat_hint">Saturated Fat (g)</string>
+    <string name="transfat_label">Trans Fat (g):</string>
+    <string name="transfat_hint">Trans Fat (g)</string>
+    <string name="cholesterol_label">Cholesterol (mg):</string>
+    <string name="cholesterol_hint">Cholesterol (mg)</string>
+    <string name="sodium_label">Sodium (mg):</string>
+    <string name="sodium_hint">Sodium (mg)</string>
+    <string name="fiber_label">Fiber (g):</string>
+    <string name="fiber_hint">Fiber (g)</string>
+    <string name="protein_label">Protein (g):</string>
+    <string name="protein_hint">Protein (g)</string>
+    <string name="vitamina_label">Vitamin A (μg):</string>
+    <string name="vitamina_hint">Vitamin A</string>
+    <string name="vitaminc_label">Vitamin C (mg):</string>
+    <string name="vitaminc_hint">Vitamin C (mg)</string>
+    <string name="calcium_label">Calcium (mg):</string>
+    <string name="calcium_hint">Calcium (mg)</string>
+    <string name="potassium_label">Potassium (mg):</string>
+    <string name="potassium_hint">Potassium (mg)</string>
+    <string name="iron_hint">Iron (mg)</string>
+    <string name="iron_label">Iron (mg):</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="recent_log_title">Recent Logged Entries</string>
+    <string name="title_log_day">Food Logs</string>
+    <string name="credits_title">Credits</string>
+    <string name="credits_desc">Special Thanks to: \nUSDA API\nPicassco\nFast Android Networking\nMaterial Design Icons\nChris\'s Banes PhotoView for Pinching and Zooming\nCircleIndicator for showing viewpagers</string>
+    <string name="workout_program_title">Workout Program</string>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/view_settings"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_diary"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="@string/calorie_log" />
+        <item
+            android:id="@+id/nav_weight_log"
+            android:icon="@drawable/ic_scale_bathroom"
+            android:title="@string/weight_log" />
+        <item
+            android:id="@+id/nav_workout_schedule"
+            android:icon="@drawable/ic_today_black_24dp"
+            android:title="@string/workout_schedule" />
+
+        <item
+            android:id="@+id/nav_add_custom_food"
+            android:icon="@drawable/ic_food"
+            android:title="@string/add_custom_food" />
+        <item
+            android:id="@+id/nav_add_food"
+            android:icon="@drawable/ic_food"
+            android:title="@string/add_food" />
+    </group>
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/links">
+
+        <item
+            android:id="@+id/nav_credits"
+            android:title="Credits"
+            android:icon="@drawable/ic_info_black_24dp" />
+
+    </group>
+
+</menu>

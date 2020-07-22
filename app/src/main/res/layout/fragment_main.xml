@@ -1,0 +1,176 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ca.stclaircollege.fitgrind.MainFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/cardview_margin"
+            android:layout_marginBottom="@dimen/cardview_margin"
+            app:cardElevation="@dimen/elevation"
+            app:contentPadding="@dimen/padding"
+            android:id="@+id/results">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/currentDate"
+                    android:textSize="18sp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/primaryText" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:text="0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/calories_goal"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/title_font_size"
+                            android:textStyle="normal|bold"
+                            android:textColor="@color/primaryText" />
+
+                        <TextView
+                            android:text="@string/calorie_goal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/calories_goal_title"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/title_label_font_size"
+                            android:textColor="@color/primaryText" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:text="0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/calories_obtained_title"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/title_font_size"
+                            android:textStyle="normal|bold" />
+
+                        <TextView
+                            android:text="@string/calories_obtained"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/calories_obtained_label"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/title_label_font_size"
+                            android:textColor="@color/primaryText" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:text="@string/recent_log_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recent_title_label"
+            android:padding="@dimen/padding"
+            android:textStyle="normal|bold"
+            android:textSize="@dimen/title_font_size"
+            android:textColor="@color/primaryText"
+            android:gravity="center_horizontal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/cardview_shadow_end_color"
+            android:layout_height="1dp" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/calorie_listview"
+            android:divider="@android:color/transparent"
+            android:layoutAnimation="@anim/layout_animation"
+            android:dividerHeight="@dimen/padding" />
+
+    </LinearLayout>
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/fab_margin"
+        app:menu_fab_size="normal"
+        app:menu_colorNormal="@color/colorAccent"
+        app:menu_colorPressed="@color/colorSecondary"
+        app:menu_animationDelayPerItem="50"
+        app:menu_icon="@drawable/fab_add"
+        app:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        app:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        app:menu_labels_position="left"
+        app:menu_openDirection="up"
+        app:menu_backgroundColor="@android:color/transparent">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/foodFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_food"
+            app:menu_colorNormal="@color/colorPrimary"
+            app:fab_colorPressed="@color/colorPrimaryDark"
+            app:fab_size="mini"
+            app:fab_label="@string/add_food" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/customFoodFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_food"
+            app:menu_colorNormal="@color/colorPrimary"
+            app:fab_colorPressed="@color/colorPrimaryDark"
+            app:fab_size="mini"
+            app:fab_label="@string/add_custom_food" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/weightLogFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_scale_bathroom"
+            app:menu_colorNormal="@color/colorPrimary"
+            app:fab_colorPressed="@color/colorPrimaryDark"
+            app:fab_size="mini"
+            app:fab_label="@string/weight_log" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+</RelativeLayout>

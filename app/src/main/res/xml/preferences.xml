@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:defaultValue="@string/gender_default_value"
+        android:title="@string/gender_title_label"
+        android:entries="@array/gender_key"
+        android:entryValues="@array/gender_value"
+        android:key="gender_keys"
+        android:summary="@string/gender_summary" />
+    <EditTextPreference
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:inputType="number"
+        android:title="@string/age_title"
+        android:key="@string/age_key"
+        android:summary="@string/age_summary"
+        android:defaultValue="0" />
+    <EditTextPreference
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:inputType="number|numberDecimal"
+        android:title="@string/height_title_in"
+        android:key="@string/height_key_in"
+        android:summary="@string/height_summary_in"
+        android:defaultValue="0" />
+    <EditTextPreference
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:inputType="number|numberDecimal"
+        android:title="@string/weight_label_title"
+        android:key="@string/weight_key"
+        android:summary="@string/weight_description"
+        android:defaultValue="0" />
+    <EditTextPreference
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:inputType="number|numberDecimal"
+        android:title="@string/weight_goal_title"
+        android:key="@string/weight_goal_key"
+        android:summary="@string/weight_goal_summary"
+        android:defaultValue="0" />
+    <ListPreference
+        android:defaultValue="0"
+        android:title="@string/lifestyle_title"
+        android:entries="@array/activity_key"
+        android:entryValues="@array/activity_value"
+        android:key="lifestyle_key"
+        android:summary="@string/lifestyle_summary" />
+    <ListPreference
+        android:defaultValue="500"
+        android:title="@string/weight_week_label"
+        android:entries="@array/weight_key"
+        android:entryValues="@array/weight_value"
+        android:key="weight_per_week"
+        android:summary="@string/weight_week_summary" />
+</PreferenceScreen>

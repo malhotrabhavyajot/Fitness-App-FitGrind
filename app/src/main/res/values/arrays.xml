@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gender_key">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="gender_value">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="activity_key">
+        <item>Sedentary Lifestyle (little or no exercise)</item>
+        <item>Lightly Active (Light exercise 1-3 days/week)</item>
+        <item>Moderate Exercise (3-5 days/week)</item>
+        <item>Very Active (hard exercise 6-7 days/week)</item>
+        <item>Extra Active (very hard exercise/sports &amp; physical job or 2x training)</item>
+    </string-array>
+
+    <string-array name="activity_value">
+        <item>1.2</item>
+        <item>1.375</item>
+        <item>1.55</item>
+        <item>1.725</item>
+        <item>1.9</item>
+    </string-array>
+
+
+    <string-array name="weight_key">
+        <item>Maintain weight</item>
+        <item>0.5 pounds per week</item>
+        <item>1 pounds per week</item>
+        <item>1.5 pounds per week</item>
+    </string-array>
+
+    <string-array name="weight_value">
+        <item>0</item>
+        <item>250</item>
+        <item>500</item>
+        <item>750</item>
+    </string-array>
+</resources>

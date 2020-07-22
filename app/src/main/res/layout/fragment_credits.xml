@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ca.stclaircollege.fitgrind.CreditsFragment"
+    android:padding="@dimen/padding">
+
+
+    <TextView
+        android:text="@string/credits_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/credits_title"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textSize="@dimen/title_font_size"
+        android:padding="@dimen/padding"
+        android:textColor="@color/primaryText" />
+
+    <TextView
+        android:text="@string/credits_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/credits_desc"
+        android:textSize="@dimen/listview_font_size"
+        android:padding="@dimen/padding" />
+</LinearLayout>

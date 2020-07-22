@@ -1,0 +1,377 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ca.stclaircollege.fitgrind.AddCustomFoodFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/padding">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/food_name_layout">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:ems="10"
+                        android:nextFocusDown="@+id/calories_field"
+                        android:id="@+id/food_name_field"
+                        android:layout_weight="1"
+                        android:hint="@string/food_hint_name"
+                        android:inputType="text|textCapWords" />
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/serving_layout">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:textSize="16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number|numberDecimal"
+                        android:nextFocusDown="@+id/serving_size_field"
+                        android:ems="10"
+                        android:id="@+id/calories_field"
+                        android:hint="@string/calories_hint" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:textSize="16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:ems="10"
+                        android:id="@+id/serving_size_field"
+                        android:nextFocusDown="@+id/totalfat_field"
+                        android:layout_weight="1"
+                        android:hint="@string/servingsize_hint" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/nutrient_grid_one_layout">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:textSize="16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number|numberDecimal"
+                        android:ems="10"
+                        android:id="@+id/totalfat_field"
+                        android:nextFocusDown="@+id/sugar_field"
+                        android:layout_weight="1"
+                        android:hint="@string/totalfat_hint" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:textSize="16sp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number|numberDecimal"
+                        android:ems="10"
+                        android:id="@+id/sugar_field"
+                        android:nextFocusDown="@+id/carbohydrate_field"
+                        android:layout_weight="1"
+                        android:hint="@string/sugar_hint"
+                        android:layout_width="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:id="@+id/carbohydrate_field"
+                        android:nextFocusDown="@+id/saturatedfat_field"
+                        android:layout_weight="1"
+                        android:inputType="number|numberDecimal"
+                        android:hint="@string/carbohydrate_hint" />
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nutrient_grid_two_layout">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:textSize="16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:id="@+id/saturatedfat_field"
+                        android:nextFocusDown="@+id/transfat_field"
+                        android:inputType="number|numberDecimal"
+                        android:hint="@string/saturatedfat_hint" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:textSize="16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:id="@+id/transfat_field"
+                        android:nextFocusDown="@+id/cholesterol_field"
+                        android:inputType="number|numberDecimal"
+                        android:hint="@string/transfat_hint" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nutrient_grid_three_layout">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:id="@+id/cholesterol_field"
+                        android:nextFocusDown="@+id/sodium_field"
+                        android:inputType="number|numberDecimal"
+                        android:hint="@string/cholesterol_hint" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:id="@+id/sodium_field"
+                        android:nextFocusDown="@+id/fiber_field"
+                        android:inputType="number|numberDecimal"
+                        android:hint="@string/sodium_hint" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number|numberDecimal"
+                        android:ems="10"
+                        android:id="@+id/fiber_field"
+                        android:nextFocusDown="@+id/protein_field"
+                        android:textSize="16sp"
+                        android:hint="@string/fiber_hint" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nutrient_grid_four_layout">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:id="@+id/protein_field"
+                        android:nextFocusDown="@+id/vitamina_field"
+                        android:textSize="16sp"
+                        android:inputType="number|numberDecimal"
+                        android:hint="@string/protein_hint" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number|numberDecimal"
+                        android:nextFocusDown="@+id/vitaminc_field"
+                        android:ems="10"
+                        android:id="@+id/vitamina_field"
+                        android:textSize="16sp"
+                        android:hint="@string/vitamina_hint" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number|numberDecimal"
+                        android:nextFocusDown="@+id/calcium_field"
+                        android:ems="10"
+                        android:id="@+id/vitaminc_field"
+                        android:textSize="16sp"
+                        android:hint="@string/vitaminc_hint" />
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nutrient_grid_five_layout">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number|numberDecimal"
+                        android:hint="@string/calcium_hint"
+                        android:nextFocusDown="@+id/iron_field"
+                        android:ems="10"
+                        android:textSize="16sp"
+                        android:id="@+id/calcium_field" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number|numberDecimal"
+                        android:hint="@string/iron_hint"
+                        android:nextFocusDown="@+id/potassium_field"
+                        android:ems="10"
+                        android:textSize="16sp"
+                        android:id="@+id/iron_field" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number|numberDecimal"
+                        android:hint="@string/potassium_hint"
+                        android:ems="10"
+                        android:textSize="16sp"
+                        android:id="@+id/potassium_field" />
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <!-- finally a submit button -->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/submitButton"
+                android:text="Submit"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/submit_margin"
+                android:backgroundTint="@color/buttonSecondaryColor"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
